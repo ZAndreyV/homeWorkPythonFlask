@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <title>{% block title %}магазин Выхухоль{% endblock %}</title>
+  <!-- Здесь могут быть дополнительные мета-теги, стили и скрипты -->
+</head>
+<body>
+  <header>
+    <h1>магазин Выхухоль</h1>
+    <nav>
+      <ul>
+        <li><a href="/main/">Главная</a></li>
+        <li><a href="/catalog/">Каталог</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  {% block content %} {% endblock %}
+
+  <footer>
+    <div>
+      <h3>Контактная информация</h3>
+      <p>Телефон: 8-800-123-4567</p>
+      <p>Электронная почта: info@yourstore.com</p>
+    </div>
+    <div>
+      <h3>Следите за нами</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Информация о доставке</h3>
+      <p>Узнайте о наших условиях доставки и возврата</p>
+    </div>
+  </footer>
+</body>
+</html>
+
